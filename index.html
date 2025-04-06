@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barista | Welcome</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h2>WELCOME TO BARISTA COURSE</h2>
+  <P>This is a form that needs to be filled to ansure in a place of the course. </P>
+  <form action="mailto:alphanj3@gmail.com" method="post" enctype="text/plain" onsubmit="sendEmail(); return false;">
+    <div>
+      <label for="fullname">Full Name: </label>
+      <input type="text" id="fullname" name="fullname" autocomplete="name" placeholder="John Doe Kwenza" required>
+    </div>
+    <div>
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com"required>
+    </div>
+    <div>
+      <label for="tel" >Phone Number: </label>
+      <input type="tel" id="tel" name="phone" placeholder="067000000" maxlength="12" required>
+    </div> <br>
+    <div>
+      <label for="location">Location: </label>
+      <select id="location" name="location" required>
+        <option value="" disabled selected>Select your location</option>
+        <option selected>Zanzibar</option>
+      </select>
+    </div>
+    <h2>Experience Level: </h2>
+    <br>
+    <did required>
+      <label for="experience1">Have you worked as a BARISTA: </label> <br>
+      <input type="radio" id="experience1" name="experience1" value="beginner">Beginner <br>
+      <input type="radio" id="experience1" name="experience1" value="intermediate">Intermediate  <br>
+      <input type="radio" id="experience1" name="experience1" value="expert">Expert <br>
+    </div>
+    <br>
+    <div required>
+      <label for="experience2">Do you have any prior experience with coffee preparation or brewing methods..? </label>
+      <input type="radio" id="experience2" name="experience2" value="yes">Yes <br><textarea name="experience2" id="experience2" placeholder="(If Yes, Please Describe:)"></textarea> <br>
+      <input type="radio" id="experience2" name="experience2" value="no">No <br>
+    </div>
+    <br>
+    <div required>
+      <label for="experience3">What is your current level of coffee knowledge..? </label>
+      <select id="experience3" name="coffeeKnowledge" required>
+        <option value="" disabled selected>Select your level</option>
+        <option value="none">NONE</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+        <option value="expert">Expert</option>
+      </select>
+    </div>
+    <br>
+    <h2>Training Expectations & Goals</h2>
+    <div class="expectations" id="expectations" required>
+      <label for="expectations">What are your expectations from this training program..?</label>
+      <input type="checkbox" id="expectations" name="expectations" required disabled>You can choose more than one. <br>
+      <input type="checkbox" id="expectations" name="expectations" value="skills" >Learn new skills <br>
+      <input type="checkbox" id="expectations" name="expectations" value="knowledge" >Gain knowledge about coffee <br>
+      <input type="checkbox" id="expectations" name="expectations" value="networking">Networking opportunities <br>
+      <input type="checkbox" id="expectations" name="expectations" value="career" >Career advancement <br>
+      <br>
+      <label for="teg1">Why are you interested in barista training..?</label>
+      <input type="checkbox" id="teg1" name="teg1" required disabled>You can choose more than one. <br>
+      <input type="checkbox" id="teg1" name="teg1" value="career" >Career Development <br>
+      <input type="checkbox" id="teg1" name="teg1" value="professional" >Personal Interest In coffee <br>
+      <input type="checkbox" id="teg1" name="teg1" value="skills" >Improve my coffe-making skills. <br>
+    </div>
+    <br>
+    <h2>Health & Safety.</h2>
+    <div class="health1" id="health1" required>
+      <label for="hs1">Do you have any health issues that may affect your training..?</label>
+      <input type="radio" id="hs1" name="YES" value="yes">Yes <br>
+      <textarea name="hs1" id="hs1" placeholder="(If Yes, Please Describe:)"></textarea> <br>
+      <input type="radio" id="hs1" name="NO" value="no">No <br>
+    </div>
+    <br>
+    <div class="health2" id="health2" required>
+      <label for="hs2">Do you have any allergies or health conditions that the instructor should be aware of..?</label>
+      <input type="radio" id="allergy-yes" name="allergies" value="yes">Yes <br>
+      <textarea name="allergyDetails" id="allergy-details" placeholder="(If Yes, Please Describe:)"></textarea> <br>
+      <input type="radio" id="allergy-no" name="allergies" value="no">No <br>
+    </div>
+    <h2>Payment & Terms.</h2>
+    <p>Please ensure that after submitting the form through Email, you proceed with the payment of the fee to the following Yas Number: 0718343264, under the name <b>Khalfan Javan</b>."</p>
+    <button type="reset" class="reset" id="reset">Reset</button>
+    <button type="submit" class="Submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>

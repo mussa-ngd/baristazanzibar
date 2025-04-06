@@ -1,0 +1,109 @@
+/* Style for the form */
+form.submit-form {
+  display: table;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #d2b48c; /* Light brown */
+}
+
+/* Style for the divs inside the form */
+div.su {
+  display: table-row;
+}
+
+/* Style for labels and inputs */
+label, input {
+  display: table-cell;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Additional padding for labels */
+label {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+/* Style for input fields */
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Add hover effect for input fields */
+input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Style for select dropdown */
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+/* Add focus effect for select dropdown */
+select:focus {
+  border-color: #007BFF;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+
+/* Add spacing between rows */
+div.su + div.su {
+  margin-top: 10px;
+}
+
+/* Style for textarea */
+textarea {
+  width: 500px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  resize: none; /* Allow vertical resizing only */
+  background-color: #e5e6d8; 
+}
+
+/* Add focus effect for textarea */
+textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+  background-color: #f0f8ff;
+}
+
+/* Style for the webpage background */
+body {
+  background-color: #f5deb3; /* Wheat color */
+}
+
+/* Disable the text "if yes, please describe" */
+span.if-yes {
+  visibility: hidden;
+  display: none;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+  background-color: #007BFF; /* Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
